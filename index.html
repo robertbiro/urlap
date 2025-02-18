@@ -3,13 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
     <form action="">
-        <h1>HTML ürlap (HTML forms)</h1>
-        <label for="">Név:</label>
-        <input type="text">
+        <div class="first-column-container">
+            <h2>Adatok:</h2>
+            <div class="name_container">
+                <label for="name">Név:</label>
+                <input type="text" name="name" id="name" placeholder="Irja be a nevét!" required>
+            </div>
+            
+            <div class="address_container">
+                <label for="address">Cím:</label>
+                <input type="text" name="address" id="address" placeholder="Irja be a cimét!" required>
+            </div>
+    
+            <div class="phone_container">
+                <label for="phone">Telefonszám:</label>
+                <input type="tel" name="phone" id="phone" placeholder="Pl.: +36 30 123 4567" required>
+            </div>
+    
+            <div class="birthdate_container">
+                <label for="date">Születési dátum:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+        </div>
+       
+        
+        <button type="submit">Elküld</button>
+
     </form>
 </body>
 </html>
